@@ -1,0 +1,18 @@
+body {
+    font: 1em sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+a, a:visited {
+    color : red;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#back {
+    position: absolute;
+    bottom: 2em;
+}

@@ -1,0 +1,10 @@
+html
+    head
+        title= collection+"/"+title
+        link(rel="stylesheet" href="/static/style.css")
+    body
+        script(id="MathJax-script" src="/static/mathjax/tex-chtml.js")
+        h1= collection+"/"+title
+        each line in content.split('<br>')
+            p= line
+        a(id="back" href= "/main/"+collection)="Go back"

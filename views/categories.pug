@@ -1,0 +1,10 @@
+html
+    head
+        title= title
+        link(rel="stylesheet" href="/static/style.css")
+    body
+        h1= title
+        each val in documents
+            li
+                a(href="/main/"+title+"/"+val)= val
+        a(id="back" href= "/main")= "Go back"

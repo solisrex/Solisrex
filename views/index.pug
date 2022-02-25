@@ -1,0 +1,9 @@
+html
+  head
+    title= title
+    link(rel="stylesheet" href="/static/style.css")
+  body
+  h1= title
+  each val in categories
+    li
+      a(href= "/main/"+val)= val
