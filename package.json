@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.17.3",
     "mathjax": "^3.2.0",
-    "mongodb": "4.4",
+    "mysql": "2.18.1",
     "pug": "^3.0.2"
   }
 }
