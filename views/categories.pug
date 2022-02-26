@@ -4,7 +4,13 @@ html
         link(rel="stylesheet" href="/static/style.css")
     body
         h1= title
-        each val in documents
+        - var n = 0
+        while n < documents.length
+            - var id = ids[n] 
+            - var document = documents[n]
             li
-                a(href="/main/"+title+"/"+val)= val
+                a(href="/main/"+title+"/"+id)= document
+            - n = n + 1
+            
+
         a(id="back" href= "/main")= "Go back"
