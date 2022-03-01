@@ -39,7 +39,7 @@ async function getDocuments(collection, req, res) {
   });
   connection.connect();
      
-  connection.query('SELECT * FROM '+collection, function (error, results, fields) {
+  connection.query('SELECT * FROM '+collection+' ORDER BY title;', function (error, results, fields) {
     if (error) throw error;
     res.render('categories',{title : capitalize(collection),ids : results.map(x => parseInt(x.id)), documents : results.map(x => capitalize(x.title))})
   });
